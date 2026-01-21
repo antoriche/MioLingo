@@ -16,15 +16,20 @@ export function initializeDatabases() {
 
   // Dynamically import PouchDB only on client
   if (!vocabularyDB) {
-    const PouchDB = require('pouchdb-browser');
+    try {
+      const PouchDB = require('pouchdb-browser');
 
-    // Vocabulary database (read-only for users, pre-populated)
-    vocabularyDB = new PouchDB('miolingo-vocabulary');
+      // Vocabulary database (read-only for users, pre-populated)
+      vocabularyDB = new PouchDB('miolingo-vocabulary');
 
-    // User progress database (read-write)
-    progressDB = new PouchDB('miolingo-progress');
+      // User progress database (read-write)
+      progressDB = new PouchDB('miolingo-progress');
 
-    console.log('✅ PouchDB databases initialized');
+      console.log('✅ PouchDB databases initialized');
+    } catch (error) {
+      console.error('Error initializing PouchDB:', error);
+      throw error;
+    }
   }
 }
 

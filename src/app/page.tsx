@@ -37,32 +37,36 @@ export default function Home() {
 
   useEffect(() => {
     async function initialize() {
-      // Initialize PouchDB
-      initializeDatabases();
+      try {
+        // Initialize PouchDB
+        initializeDatabases();
 
-      // Seed vocabulary
-      await seedVocabulary();
+        // Seed vocabulary
+        await seedVocabulary();
 
-      // Load user progress
-      const progress = await getUserProgress();
-      if (progress) {
-        setCurrentStreak(progress.currentStreak);
-        setWordsLearned(progress.wordsLearned);
+        // Load user progress
+        const progress = await getUserProgress();
+        if (progress) {
+          setCurrentStreak(progress.currentStreak);
+          setWordsLearned(progress.wordsLearned);
+        }
+
+        // Check today's progress
+        const today = getDateString(new Date());
+        const allWordProgress = await getAllWordProgress();
+        const todayWords = allWordProgress.filter(wp => {
+          const lastReviewed = wp.lastReviewed ? getDateString(new Date(wp.lastReviewed)) : '';
+          return lastReviewed === today;
+        });
+
+        setTodayNewWords(todayWords.filter(wp => wp.timesReviewed === 1).length);
+        setTodayReviewWords(todayWords.filter(wp => wp.timesReviewed > 1).length);
+      } catch (error) {
+        console.error('Error initializing app:', error);
+      } finally {
+        setLoading(false);
+        setMounted(true);
       }
-
-      // Check today's progress
-      const today = getDateString(new Date());
-      const allWordProgress = await getAllWordProgress();
-      const todayWords = allWordProgress.filter(wp => {
-        const lastReviewed = wp.lastReviewed ? getDateString(new Date(wp.lastReviewed)) : '';
-        return lastReviewed === today;
-      });
-
-      setTodayNewWords(todayWords.filter(wp => wp.timesReviewed === 1).length);
-      setTodayReviewWords(todayWords.filter(wp => wp.timesReviewed > 1).length);
-
-      setLoading(false);
-      setMounted(true);
     }
 
     initialize();

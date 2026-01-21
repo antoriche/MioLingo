@@ -1,0 +1,99 @@
+# Workflow Status Template
+
+# This tracks progress through BMM methodology Analysis, Planning, and Solutioning phases.
+# Implementation phase is tracked separately in sprint-status.yaml
+
+# STATUS DEFINITIONS:
+# ==================
+# Initial Status (before completion):
+#   - required: Must be completed to progress
+#   - optional: Can be completed but not required
+#   - recommended: Strongly suggested but not required
+#   - conditional: Required only if certain conditions met (e.g., if_has_ui)
+#
+# Completion Status:
+#   - {file-path}: File created/found (e.g., "docs/product-brief.md")
+#   - skipped: Optional/conditional workflow that was skipped
+
+generated: "2026-01-19"
+project: "MioLingo"
+project_type: "greenfield"
+selected_track: "bmad-method"
+field_type: "greenfield"
+workflow_path: "_bmad/bmm/workflows/workflow-status/paths/method-greenfield.yaml"
+user_description: "Personal web application to learn Vietnamese"
+discovery_workflows:
+  brainstorm: true
+  research: false
+  product_brief: false
+
+workflow_status:
+  # Phase 1: Analysis (Optional Discovery)
+  phase_1_analysis:
+    name: "Analysis (Optional)"
+    status: "in-progress"
+    workflows:
+      brainstorm-project:
+        agent: "analyst"
+        command: "/bmad:bmm:workflows:brainstorming"
+        status: "required"
+        note: "Creative exploration and ideation for Vietnamese learning app"
+
+  # Phase 2: Planning
+  phase_2_planning:
+    name: "Planning"
+    status: "pending"
+    workflows:
+      prd:
+        agent: "pm"
+        command: "/bmad:bmm:workflows:create-prd"
+        status: "required"
+        output: "Product Requirements Document with FRs and NFRs"
+      create-ux-design:
+        agent: "ux-designer"
+        command: "/bmad:bmm:workflows:create-ux-design"
+        status: "conditional"
+        note: "Determined after PRD - likely needed for web application UI"
+
+  # Phase 3: Solutioning
+  phase_3_solutioning:
+    name: "Solutioning"
+    status: "pending"
+    workflows:
+      create-architecture:
+        agent: "architect"
+        command: "/bmad:bmm:workflows:create-architecture"
+        status: "required"
+        output: "System architecture document"
+        note: "Complete system design for Vietnamese learning platform"
+      create-epics-and-stories:
+        agent: "pm"
+        command: "/bmad:bmm:workflows:create-epics-and-stories"
+        status: "required"
+        note: "Break down PRD into implementable epics and stories"
+      test-design:
+        agent: "tea"
+        command: "/bmad:bmm:workflows:test-design"
+        status: "optional"
+        note: "Testability assessment before gate check"
+      implementation-readiness:
+        agent: "architect"
+        command: "/bmad:bmm:workflows:implementation-readiness"
+        status: "required"
+        note: "Validates PRD + Architecture + Epics + UX"
+
+  # Phase 4: Implementation
+  phase_4_implementation:
+    name: "Implementation"
+    status: "in-progress"
+    note: "MVP implementation completed on 2026-01-20"
+    workflows:
+      sprint-planning:
+        agent: "sm"
+        command: "/bmad:bmm:workflows:sprint-planning"
+        status: "skipped"
+        note: "Direct MVP implementation completed. See _bmad-output/implementation-artifacts/mvp-implementation-summary.md"
+      mvp-implementation:
+        status: "completed"
+        completed_at: "2026-01-20"
+        note: "Core features implemented: Flashcards, Spaced Repetition, Progress Tracking, 50 Vietnamese words, Offline-first with PouchDB"

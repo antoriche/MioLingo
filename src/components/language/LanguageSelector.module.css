@@ -1,0 +1,110 @@
+.languageSelector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.languageButtons {
+  display: flex;
+  gap: 0.75rem;
+  background: var(--card-background, #ffffff);
+  padding: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.languageButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 120px;
+}
+
+.languageButton:hover {
+  background: rgba(0, 123, 255, 0.05);
+  border-color: rgba(0, 123, 255, 0.2);
+}
+
+.languageButton.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.languageButton.active .flag,
+.languageButton.active .languageName,
+.languageButton.active .nativeName {
+  color: #ffffff;
+}
+
+.flag {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.languageName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a1a1a);
+}
+
+.nativeName {
+  font-size: 0.75rem;
+  color: var(--text-secondary, #666666);
+  font-style: italic;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .languageButtons {
+    background: var(--card-background-dark, #2a2a2a);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .languageButton:hover {
+    background: rgba(102, 126, 234, 0.1);
+  }
+
+  .languageName {
+    color: var(--text-primary-dark, #f0f0f0);
+  }
+
+  .nativeName {
+    color: var(--text-secondary-dark, #a0a0a0);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .languageButtons {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .languageButton {
+    flex: 1;
+    min-width: 0;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .flag {
+    font-size: 1.75rem;
+  }
+
+  .languageName {
+    font-size: 0.8rem;
+  }
+
+  .nativeName {
+    font-size: 0.7rem;
+  }
+}

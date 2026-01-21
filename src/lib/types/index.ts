@@ -1,8 +1,11 @@
 // Core types for MioLingo
 
+export type Language = 'vietnamese' | 'french';
+
 export interface VocabularyWord {
   id: string;
-  vietnamese: string;
+  language: Language;
+  targetLanguage: string; // The word in the language being learned
   english: string;
   pronunciation: string; // Romanization
   audioUrl: string;
@@ -11,7 +14,7 @@ export interface VocabularyWord {
   createdAt: Date;
 }
 
-export type VocabularyCategory = 
+export type VocabularyCategory =
   | 'greetings'
   | 'family'
   | 'romance'
@@ -26,14 +29,24 @@ export interface UserProgress {
   currentStreak: number;
   streakRecoveries: number;
   lastStudyDate: string; // ISO date
+  currentLanguage: Language; // Currently selected language
   createdAt: Date;
   updatedAt: Date;
+}
+
+export interface LanguageProgress {
+  language: Language;
+  wordsLearned: number;
+  currentStreak: number;
+  streakRecoveries: number;
+  lastStudyDate: string; // ISO date
 }
 
 export interface WordProgress {
   id: string; // wordId
   wordId: string;
   userId: string;
+  language: Language; // Which language this progress is for
   mastered: boolean;
   accuracy: number; // 0-100
   timesReviewed: number;

@@ -4,18 +4,20 @@ import { useEffect, useState } from 'react';
 import { initializeDatabases } from '@/lib/db';
 import {
   seedVocabulary,
-  getAllVocabulary,
+  getVocabularyByLanguage,
   getUserProgress,
   updateUserProgress,
-  getAllWordProgress,
+  getWordProgressByLanguage,
   saveWordProgress,
   saveStudySession,
 } from '@/lib/db/helpers';
 import { calculateNextReview, getWordsForReview, getNewWords } from '@/lib/learning/spaced-repetition';
 import { getDateString } from '@/lib/learning/streak';
+import { loadLanguagePreference, saveLanguagePreference } from '@/lib/learning/language-storage';
 import Flashcard from '@/components/flashcard/Flashcard';
 import ProgressStats from '@/components/progress/ProgressStats';
-import type { VocabularyWord, ReviewQuality, WordProgress } from '@/lib/types';
+import LanguageSelector from '@/components/language/LanguageSelector';
+import type { VocabularyWord, ReviewQuality, WordProgress, Language } from '@/lib/types';
 
 type LearningMode = 'welcome' | 'learning' | 'complete';
 
@@ -23,6 +25,7 @@ export default function Home() {
   const [mounted, setMounted] = useState(false);
   const [mode, setMode] = useState<LearningMode>('welcome');
   const [loading, setLoading] = useState(true);
+  const [currentLanguage, setCurrentLanguage] = useState<Language>('vietnamese');
 
   // Progress state
   const [currentStreak, setCurrentStreak] = useState(0);
@@ -38,6 +41,10 @@ export default function Home() {
   useEffect(() => {
     async function initialize() {
       try {
+        // Load language preference
+        const savedLanguage = loadLanguagePreference();
+        setCurrentLanguage(savedLanguage);
+
         // Initialize PouchDB
         initializeDatabases();
 
@@ -49,11 +56,16 @@ export default function Home() {
         if (progress) {
           setCurrentStreak(progress.currentStreak);
           setWordsLearned(progress.wordsLearned);
+          // Update current language if different
+          if (progress.currentLanguage && progress.currentLanguage !== savedLanguage) {
+            setCurrentLanguage(progress.currentLanguage);
+            saveLanguagePreference(progress.currentLanguage);
+          }
         }
 
-        // Check today's progress
+        // Check today's progress for current language
         const today = getDateString(new Date());
-        const allWordProgress = await getAllWordProgress();
+        const allWordProgress = await getWordProgressByLanguage(savedLanguage);
         const todayWords = allWordProgress.filter(wp => {
           const lastReviewed = wp.lastReviewed ? getDateString(new Date(wp.lastReviewed)) : '';
           return lastReviewed === today;
@@ -72,6 +84,25 @@ export default function Home() {
     initialize();
   }, []);
 
+  const handleLanguageChange = async (newLanguage: Language) => {
+    setCurrentLanguage(newLanguage);
+    saveLanguagePreference(newLanguage);
+
+    // Update user progress with new language
+    await updateUserProgress({ currentLanguage: newLanguage });
+
+    // Reload progress for new language
+    const today = getDateString(new Date());
+    const allWordProgress = await getWordProgressByLanguage(newLanguage);
+    const todayWords = allWordProgress.filter(wp => {
+      const lastReviewed = wp.lastReviewed ? getDateString(new Date(wp.lastReviewed)) : '';
+      return lastReviewed === today;
+    });
+
+    setTodayNewWords(todayWords.filter(wp => wp.timesReviewed === 1).length);
+    setTodayReviewWords(todayWords.filter(wp => wp.timesReviewed > 1).length);
+  };
+
   const startLearning = async () => {
     setLoading(true);
 
@@ -79,17 +110,17 @@ export default function Home() {
       // Ensure databases are initialized
       initializeDatabases();
 
-      // Get all vocabulary
-      const allWords = await getAllVocabulary();
+      // Get vocabulary for current language
+      const allWords = await getVocabularyByLanguage(currentLanguage);
 
       if (allWords.length === 0) {
-        console.error('No vocabulary words found');
-        alert('No vocabulary words available. Please refresh the page.');
+        console.error('No vocabulary words found for', currentLanguage);
+        alert(`No vocabulary words available for ${currentLanguage}. Please refresh the page.`);
         setLoading(false);
         return;
       }
 
-      const allWordProgress = await getAllWordProgress();
+      const allWordProgress = await getWordProgressByLanguage(currentLanguage);
 
       // Get learned word IDs
       const learnedWordIds = new Set(allWordProgress.map(wp => wp.wordId));
@@ -134,7 +165,7 @@ export default function Home() {
 
     try {
       // Get or create word progress
-      const allWordProgress = await getAllWordProgress();
+      const allWordProgress = await getWordProgressByLanguage(currentLanguage);
       let wordProgress = allWordProgress.find(wp => wp.wordId === currentWord.id);
 
       if (!wordProgress) {
@@ -143,6 +174,7 @@ export default function Home() {
           id: `word-${currentWord.id}`,
           wordId: currentWord.id,
           userId: 'default',
+          language: currentLanguage,
           mastered: false,
           accuracy: correct ? 100 : 0,
           timesReviewed: 1,
@@ -391,11 +423,16 @@ export default function Home() {
         <p style={{
           fontSize: '1.125rem',
           color: '#666',
-          marginBottom: '2rem',
+          marginBottom: '1.5rem',
           textAlign: 'center',
         }}>
-          Learn Vietnamese, Connect with Love ❤️
+          Learn Languages, Connect with Love ❤️
         </p>
+
+        <LanguageSelector
+          currentLanguage={currentLanguage}
+          onLanguageChange={handleLanguageChange}
+        />
 
         <ProgressStats
           currentStreak={currentStreak}
@@ -436,7 +473,7 @@ export default function Home() {
           color: '#999',
           textAlign: 'center',
         }}>
-          50 words ready • Spaced repetition powered
+          {currentLanguage === 'vietnamese' ? '50 Vietnamese' : '50 French'} words ready • Spaced repetition powered
         </p>
       </main>
     </div>

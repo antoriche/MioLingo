@@ -1,10 +1,11 @@
 // Database initialization and seeding utilities
 import { getVocabularyDB, getProgressDB } from '../db';
-import { initialVocabulary } from '../data/vocabulary';
-import type { VocabularyWord, UserProgress, WordProgress } from '../types';
+import { vietnameseVocabulary } from '../data/vocabulary';
+import { frenchVocabulary } from '../data/vocabulary-french';
+import type { VocabularyWord, UserProgress, WordProgress, Language } from '../types';
 
 /**
- * Seed vocabulary database with initial words
+ * Seed vocabulary database with initial words for both languages
  */
 export async function seedVocabulary(): Promise<void> {
     const db = getVocabularyDB();
@@ -17,14 +18,15 @@ export async function seedVocabulary(): Promise<void> {
             return;
         }
 
-        // Seed initial vocabulary
-        const docs = initialVocabulary.map(word => ({
+        // Seed both Vietnamese and French vocabulary
+        const allVocabulary = [...vietnameseVocabulary, ...frenchVocabulary];
+        const docs = allVocabulary.map(word => ({
             _id: word.id,
             ...word,
         }));
 
         await db.bulkDocs(docs);
-        console.log(`✅ Seeded ${docs.length} vocabulary words`);
+        console.log(`✅ Seeded ${docs.length} vocabulary words (Vietnamese + French)`);
     } catch (error) {
         console.error('Error seeding vocabulary:', error);
     }
@@ -50,6 +52,7 @@ export async function initializeUserProgress(): Promise<UserProgress> {
                 currentStreak: 0,
                 streakRecoveries: 0,
                 lastStudyDate: '',
+                currentLanguage: 'vietnamese', // Default to Vietnamese
                 createdAt: new Date(),
                 updatedAt: new Date(),
             };
@@ -77,6 +80,14 @@ export async function getAllVocabulary(): Promise<VocabularyWord[]> {
         console.error('Error fetching vocabulary:', error);
         return [];
     }
+}
+
+/**
+ * Get vocabulary words for a specific language
+ */
+export async function getVocabularyByLanguage(language: Language): Promise<VocabularyWord[]> {
+    const allWords = await getAllVocabulary();
+    return allWords.filter(word => word.language === language);
 }
 
 /**
@@ -156,6 +167,14 @@ export async function getAllWordProgress(): Promise<WordProgress[]> {
         console.error('Error fetching all word progress:', error);
         return [];
     }
+}
+
+/**
+ * Get word progress for a specific language
+ */
+export async function getWordProgressByLanguage(language: Language): Promise<WordProgress[]> {
+    const allProgress = await getAllWordProgress();
+    return allProgress.filter(progress => progress.language === language);
 }
 
 /**

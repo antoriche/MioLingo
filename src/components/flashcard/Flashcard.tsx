@@ -46,13 +46,13 @@ export default function Flashcard({ word, onAnswer, showFeedback }: FlashcardPro
                     cursor: !showFeedback ? 'pointer' : 'default',
                 }}
             >
-                {/* Front side - Vietnamese word */}
+                {/* Front side - Target language word */}
                 <div style={{
                     position: 'absolute',
                     width: '100%',
                     height: '100%',
                     backfaceVisibility: 'hidden',
-                    backgroundColor: '#FF6B6B',
+                    backgroundColor: word.language === 'vietnamese' ? '#FF6B6B' : '#4ECDC4',
                     borderRadius: '16px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -68,7 +68,7 @@ export default function Flashcard({ word, onAnswer, showFeedback }: FlashcardPro
                         textTransform: 'uppercase',
                         letterSpacing: '1px',
                     }}>
-                        Vietnamese
+                        {word.language === 'vietnamese' ? 'Vietnamese' : 'French'}
                     </div>
                     <div style={{
                         fontSize: '2.5rem',
@@ -77,7 +77,7 @@ export default function Flashcard({ word, onAnswer, showFeedback }: FlashcardPro
                         marginBottom: '1rem',
                         textAlign: 'center',
                     }}>
-                        {word.vietnamese}
+                        {word.targetLanguage}
                     </div>
                     <div style={{
                         fontSize: '1rem',

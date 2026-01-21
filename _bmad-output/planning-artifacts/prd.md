@@ -139,6 +139,24 @@ classification:
 - "Teach Me Back" mode (she adds words with her voice)
 - Couple's vocabulary book (shared learning)
 
+**Multi-Language Support (French):**
+- **Language Mode Switch:** Toggle between Vietnamese and French learning modes
+- Language selector UI (flag icons, clear visual indicator of active language)
+- French vocabulary bank (500-1000 words)
+- Separate progress tracking per language (independent streaks and vocabulary counters)
+- French-specific pronunciation audio
+- Language-agnostic flashcard engine (same algorithm works for both languages)
+- Independent or combined streak modes
+- French cultural context (different from Vietnamese)
+- Persistent language selection (remembers which mode user was in)
+
+**Reciprocal Learning Features:**
+- Easy language mode switching for girlfriend to switch from Vietnamese mode to French mode
+- Shared progress dashboard (both languages visible simultaneously)
+- Couple's milestone: "You both have 30-day streaks!"
+- Language pairing suggestions (related words across languages)
+- Profile-based language preference (his account: Vietnamese, her account: French)
+
 **Enhanced Tracking:**
 - Detailed analytics dashboard
 - Progress visualization graphs
@@ -155,6 +173,11 @@ classification:
 - "Family Dinner Check" validation milestone
 - Full conversational AI with cultural intelligence
 - Regional dialect switcher (Northern/Southern)
+- Multi-language polyglot mode (learn 3+ languages simultaneously)
+- Language comparison features (cognates, shared roots, grammar parallels)
+- Couple's language challenge system (matched learning goals)
+- Language swap mode (teach your native language while learning theirs)
+- Cross-language vocabulary games (match Vietnamese-French-English)
 
 **Content Expansion:**
 - Vietnamese cultural context cards
@@ -227,6 +250,36 @@ MioLingo didn't just teach him Vietnamese. It helped him write their love story 
 - Continues daily practice with renewed commitment
 
 **Requirements Revealed:** Streak recovery system, motivational messaging, forgiveness mechanics, progress preservation
+
+### Journey 3: The Girlfriend - Reciprocal French Learner (Secondary User)
+
+**Opening Scene: The Inspiration**
+
+Antonin's girlfriend watches him practice Vietnamese flashcards on his phone. He's been using MioLingo for 3 months now - 90 days straight - and she can see the difference. He greets her family in Vietnamese, sends her good morning texts she doesn't need to translate, even understands some of the reels she shares.
+
+She feels a mix of pride and... something else. A quiet thought: "He's learning my language. What am I learning of his?"
+
+**Rising Action: Her Turn**
+
+She asks him, "Does MioLingo have French?" He taps the language switch at the top of the app - the Vietnamese flag changes to a French flag. The interface updates: "Ready to learn French?" He hands her his phone. "Try it," he says.
+
+Day 1: She learns "bonjour," "je t'aime," basic numbers. It's easier than she expected - the same flashcard system he's been using. She gets why he's hooked.
+
+Day 5: She sends him a French good morning text: "Bonjour mon amour! ❤️" His face lights up. Now he's the one feeling seen.
+
+**The Shared Experience:**
+
+Week 4: They compare streaks. She's at 28 days (French), he's at 118 days (Vietnamese). It becomes a friendly competition. Who can maintain their streak longer?
+
+Week 8: MioLingo shows a new milestone: "You both have 30-day streaks! 🎉" They screenshot it, send it to friends. It's not just his app anymore - it's theirs.
+
+**The Payoff:**
+
+Month 3: She visits France with him for the first time. At a café, she orders in French - fumbling, but understood. The waiter smiles. Antonin beams with pride, the way she felt when he first spoke Vietnamese to her family.
+
+On the flight home, she thinks: "We built this together. We're learning each other's worlds."
+
+**Requirements Revealed:** Multi-language support, reciprocal learning features, shared progress tracking, couple's milestones
 
 ### Journey Requirements Summary
 

@@ -1,14 +1,15 @@
-# Vocabulary Data Structure
+# Vocabulary Data Structure - Agent Documentation
 
 ## Overview
 
-The vocabulary data is now organized in JSON files by theme/category, making it easier to maintain and extend.
+The vocabulary data is organized in JSON files by theme/category, making it easier to maintain and extend. All JSON files are statically imported in `vocabulary-loader.ts` for reliable data loading.
 
 ## Structure
 
 ```
 src/lib/data/
-├── vocabulary-loader.ts       # TypeScript loader with types and helper functions
+├── vocabulary-loader.ts       # TypeScript loader with static imports
+├── AGENTS.md                  # This documentation file
 ├── french/                    # French vocabulary organized by theme
 │   ├── greetings.json
 │   ├── romance.json
@@ -16,14 +17,25 @@ src/lib/data/
 │   ├── numbers.json
 │   ├── daily-life.json
 │   ├── food.json
-│   └── time.json
+│   ├── time.json
+│   ├── colors.json
+│   ├── weather.json
+│   ├── body.json
+│   ├── animals.json
+│   └── emotions.json
 └── vietnamese/                # Vietnamese vocabulary organized by theme
     ├── greetings.json
     ├── romance.json
     ├── family.json
     ├── numbers.json
     ├── daily-life.json
-    └── food.json
+    ├── food.json
+    ├── time.json
+    ├── colors.json
+    ├── weather.json
+    ├── body.json
+    ├── animals.json
+    └── emotions.json
 ```
 
 ## Usage
@@ -71,6 +83,24 @@ import { getVocabularyWordById } from '@/lib/data/vocabulary-loader';
 const word = getVocabularyWordById('french', 'fr-001');
 ```
 
+## Implementation Details
+
+### Static Imports
+All JSON files are statically imported at the top of `vocabulary-loader.ts`. This ensures:
+- **Reliable loading**: No dynamic require() issues
+- **Build-time validation**: TypeScript verifies all imports at compile time
+- **Type safety**: Full type checking on imported data
+- **Better performance**: Data is bundled and optimized by Next.js
+
+### Data Hydration
+The `hydrateVocabularyWords()` function adds the `createdAt` timestamp to each word, converting JSON data to full `VocabularyWord` objects.
+
+### Export Structure
+- `frenchVocabularyByCategory`: Organized by category for French
+- `frenchVocabulary`: All French words in a flat array
+- `vietnameseVocabularyByCategory`: Organized by category for Vietnamese
+- `vietnameseVocabulary`: All Vietnamese words in a flat array
+
 ## JSON File Format
 
 Each JSON file contains an array of vocabulary words without the `createdAt` timestamp (which is added automatically by the loader):
@@ -99,21 +129,23 @@ Each JSON file contains an array of vocabulary words without the `createdAt` tim
 
 1. Create new JSON files in both `src/lib/data/french/[theme].json` and `src/lib/data/vietnamese/[theme].json`
 2. Add the new category to the `VocabularyCategory` type in `src/lib/types/index.ts`
-3. Import the JSON files in `vocabulary-loader.ts`
-4. Add them to the `frenchVocabularyByCategory` and `vietnameseVocabularyByCategory` objects
-4. Add it to the `frenchVocabularyByCategory` object
+3. **Add static imports** at the top of `vocabulary-loader.ts`:
+   ```typescript
+   import frenchTheme from './french/theme.json';
+   import vietnameseTheme from './vietnamese/theme.json';
+   ```
+4. Add them to both category objects with hydration:
+   ```typescript
+   'theme': hydrateVocabularyWords(frenchTheme as VocabularyWordJSON[]),
+   ```
 
 ### 3. Add a new language
 
 1. Create a new folder `src/lib/data/[language]/`
-2. Add JSON files for each theme
-3. Update `vocabulary-loader.ts` to import and export the new language's vocabulary
-4. Update helper functions to support the new language
+2. Add JSON files for each theme (all 12 categories)
+3. **Add static imports** in `vocabulary-loader.ts` for all theme files
+4. Create a new `[language]VocabularyByCategory` object with all categories
+5. Export `[language]Vocabulary` as a flat array
+6. Update helper functions (`getVocabularyByLanguage`, etc.) to support the new language
+7. Update the `Language` type in `src/lib/types/index.ts`
 
-## Benefits
-
-- **Easy maintenance**: Edit JSON files directly without TypeScript syntax
-- **Better organization**: Each theme is in its own file
-- **Type safety**: TypeScript loader provides full type checking
-- **Flexible queries**: Helper functions for common access patterns
-- **Scalable**: Easy to add new languages and themes

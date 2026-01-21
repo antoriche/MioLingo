@@ -1,5 +1,33 @@
 import type { VocabularyWord, VocabularyCategory, Language } from '../types';
 
+// Import French vocabulary
+import frenchGreetings from './french/greetings.json';
+import frenchRomance from './french/romance.json';
+import frenchFamily from './french/family.json';
+import frenchNumbers from './french/numbers.json';
+import frenchDailyLife from './french/daily-life.json';
+import frenchFood from './french/food.json';
+import frenchTime from './french/time.json';
+import frenchColors from './french/colors.json';
+import frenchWeather from './french/weather.json';
+import frenchBody from './french/body.json';
+import frenchAnimals from './french/animals.json';
+import frenchEmotions from './french/emotions.json';
+
+// Import Vietnamese vocabulary
+import vietnameseGreetings from './vietnamese/greetings.json';
+import vietnameseRomance from './vietnamese/romance.json';
+import vietnameseFamily from './vietnamese/family.json';
+import vietnameseNumbers from './vietnamese/numbers.json';
+import vietnameseDailyLife from './vietnamese/daily-life.json';
+import vietnameseFood from './vietnamese/food.json';
+import vietnameseTime from './vietnamese/time.json';
+import vietnameseColors from './vietnamese/colors.json';
+import vietnameseWeather from './vietnamese/weather.json';
+import vietnameseBody from './vietnamese/body.json';
+import vietnameseAnimals from './vietnamese/animals.json';
+import vietnameseEmotions from './vietnamese/emotions.json';
+
 // JSON data without createdAt field
 interface VocabularyWordJSON {
     id: string;
@@ -20,52 +48,40 @@ function hydrateVocabularyWords(words: VocabularyWordJSON[]): VocabularyWord[] {
     }));
 }
 
-// Helper to safely load a category file
-function loadCategory(language: Language, category: string): VocabularyWord[] {
-    try {
-        // Dynamic require with try-catch for graceful handling of missing files
-        const data = require(`./${language}/${category}.json`) as VocabularyWordJSON[];
-        return hydrateVocabularyWords(data);
-    } catch {
-        return [];
-    }
-}
-
-// All available vocabulary categories to attempt loading
-const CATEGORIES: VocabularyCategory[] = [
-    'greetings',
-    'romance',
-    'family',
-    'numbers',
-    'daily-life',
-    'food',
-    'time',
-    'colors',
-    'weather',
-    'body',
-    'animals',
-    'emotions',
-];
-
-// Build vocabulary by category for each language
-function buildVocabularyByCategory(language: Language): Record<VocabularyCategory, VocabularyWord[]> {
-    const vocabularyByCategory = {} as Record<VocabularyCategory, VocabularyWord[]>;
-
-    for (const category of CATEGORIES) {
-        vocabularyByCategory[category] = loadCategory(language, category);
-    }
-
-    return vocabularyByCategory;
-}
-
 // French vocabulary by category
-export const frenchVocabularyByCategory = buildVocabularyByCategory('french');
+export const frenchVocabularyByCategory: Record<VocabularyCategory, VocabularyWord[]> = {
+    'greetings': hydrateVocabularyWords(frenchGreetings as VocabularyWordJSON[]),
+    'romance': hydrateVocabularyWords(frenchRomance as VocabularyWordJSON[]),
+    'family': hydrateVocabularyWords(frenchFamily as VocabularyWordJSON[]),
+    'numbers': hydrateVocabularyWords(frenchNumbers as VocabularyWordJSON[]),
+    'daily-life': hydrateVocabularyWords(frenchDailyLife as VocabularyWordJSON[]),
+    'food': hydrateVocabularyWords(frenchFood as VocabularyWordJSON[]),
+    'time': hydrateVocabularyWords(frenchTime as VocabularyWordJSON[]),
+    'colors': hydrateVocabularyWords(frenchColors as VocabularyWordJSON[]),
+    'weather': hydrateVocabularyWords(frenchWeather as VocabularyWordJSON[]),
+    'body': hydrateVocabularyWords(frenchBody as VocabularyWordJSON[]),
+    'animals': hydrateVocabularyWords(frenchAnimals as VocabularyWordJSON[]),
+    'emotions': hydrateVocabularyWords(frenchEmotions as VocabularyWordJSON[]),
+};
 
 // All French vocabulary combined
 export const frenchVocabulary: VocabularyWord[] = Object.values(frenchVocabularyByCategory).flat();
 
 // Vietnamese vocabulary by category
-export const vietnameseVocabularyByCategory = buildVocabularyByCategory('vietnamese');
+export const vietnameseVocabularyByCategory: Record<VocabularyCategory, VocabularyWord[]> = {
+    'greetings': hydrateVocabularyWords(vietnameseGreetings as VocabularyWordJSON[]),
+    'romance': hydrateVocabularyWords(vietnameseRomance as VocabularyWordJSON[]),
+    'family': hydrateVocabularyWords(vietnameseFamily as VocabularyWordJSON[]),
+    'numbers': hydrateVocabularyWords(vietnameseNumbers as VocabularyWordJSON[]),
+    'daily-life': hydrateVocabularyWords(vietnameseDailyLife as VocabularyWordJSON[]),
+    'food': hydrateVocabularyWords(vietnameseFood as VocabularyWordJSON[]),
+    'time': hydrateVocabularyWords(vietnameseTime as VocabularyWordJSON[]),
+    'colors': hydrateVocabularyWords(vietnameseColors as VocabularyWordJSON[]),
+    'weather': hydrateVocabularyWords(vietnameseWeather as VocabularyWordJSON[]),
+    'body': hydrateVocabularyWords(vietnameseBody as VocabularyWordJSON[]),
+    'animals': hydrateVocabularyWords(vietnameseAnimals as VocabularyWordJSON[]),
+    'emotions': hydrateVocabularyWords(vietnameseEmotions as VocabularyWordJSON[]),
+};
 
 // All Vietnamese vocabulary combined
 export const vietnameseVocabulary: VocabularyWord[] = Object.values(vietnameseVocabularyByCategory).flat();

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "vi-046",
+        "language": "vietnamese",
+        "targetLanguage": "Hôm nay",
+        "english": "Today",
+        "pronunciation": "hohm nai",
+        "audioUrl": "/audio/vi/homnay.mp3",
+        "category": "time",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-047",
+        "language": "vietnamese",
+        "targetLanguage": "Ngày mai",
+        "english": "Tomorrow",
+        "pronunciation": "ngai mai",
+        "audioUrl": "/audio/vi/ngaymai.mp3",
+        "category": "time",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-048",
+        "language": "vietnamese",
+        "targetLanguage": "Hôm qua",
+        "english": "Yesterday",
+        "pronunciation": "hohm kwa",
+        "audioUrl": "/audio/vi/homqua.mp3",
+        "category": "time",
+        "difficulty": 1
+    }
+]

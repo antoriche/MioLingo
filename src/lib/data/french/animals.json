@@ -1,0 +1,102 @@
+[
+    {
+        "id": "fr-801",
+        "language": "french",
+        "targetLanguage": "Le chat",
+        "english": "Cat",
+        "pronunciation": "luh shah",
+        "audioUrl": "/audio/fr/chat.mp3",
+        "category": "animals",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-802",
+        "language": "french",
+        "targetLanguage": "Le chien",
+        "english": "Dog",
+        "pronunciation": "luh shyan",
+        "audioUrl": "/audio/fr/chien.mp3",
+        "category": "animals",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-803",
+        "language": "french",
+        "targetLanguage": "L'oiseau",
+        "english": "Bird",
+        "pronunciation": "lwah-zoh",
+        "audioUrl": "/audio/fr/oiseau.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-804",
+        "language": "french",
+        "targetLanguage": "Le poisson",
+        "english": "Fish",
+        "pronunciation": "luh pwah-son",
+        "audioUrl": "/audio/fr/poisson.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-805",
+        "language": "french",
+        "targetLanguage": "Le cheval",
+        "english": "Horse",
+        "pronunciation": "luh shuh-vahl",
+        "audioUrl": "/audio/fr/cheval.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-806",
+        "language": "french",
+        "targetLanguage": "La vache",
+        "english": "Cow",
+        "pronunciation": "lah vahsh",
+        "audioUrl": "/audio/fr/vache.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-807",
+        "language": "french",
+        "targetLanguage": "Le lapin",
+        "english": "Rabbit",
+        "pronunciation": "luh lah-pan",
+        "audioUrl": "/audio/fr/lapin.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-808",
+        "language": "french",
+        "targetLanguage": "Le lion",
+        "english": "Lion",
+        "pronunciation": "luh lee-on",
+        "audioUrl": "/audio/fr/lion.mp3",
+        "category": "animals",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-809",
+        "language": "french",
+        "targetLanguage": "L'éléphant",
+        "english": "Elephant",
+        "pronunciation": "lay-lay-fahn",
+        "audioUrl": "/audio/fr/elephant.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-810",
+        "language": "french",
+        "targetLanguage": "Le papillon",
+        "english": "Butterfly",
+        "pronunciation": "luh pah-pee-yon",
+        "audioUrl": "/audio/fr/papillon.mp3",
+        "category": "animals",
+        "difficulty": 3
+    }
+]

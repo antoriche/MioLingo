@@ -1,0 +1,112 @@
+[
+    {
+        "id": "vn-013",
+        "language": "vietnamese",
+        "targetLanguage": "Không",
+        "english": "Zero",
+        "pronunciation": "khohm",
+        "audioUrl": "/audio/vn/khong-num.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-014",
+        "language": "vietnamese",
+        "targetLanguage": "Một",
+        "english": "One",
+        "pronunciation": "moht",
+        "audioUrl": "/audio/vn/mot.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-015",
+        "language": "vietnamese",
+        "targetLanguage": "Hai",
+        "english": "Two",
+        "pronunciation": "hai",
+        "audioUrl": "/audio/vn/hai.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-016",
+        "language": "vietnamese",
+        "targetLanguage": "Ba",
+        "english": "Three",
+        "pronunciation": "bah",
+        "audioUrl": "/audio/vn/ba.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-017",
+        "language": "vietnamese",
+        "targetLanguage": "Bốn",
+        "english": "Four",
+        "pronunciation": "bone",
+        "audioUrl": "/audio/vn/bon.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-018",
+        "language": "vietnamese",
+        "targetLanguage": "Năm",
+        "english": "Five",
+        "pronunciation": "nam",
+        "audioUrl": "/audio/vn/nam.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-019",
+        "language": "vietnamese",
+        "targetLanguage": "Sáu",
+        "english": "Six",
+        "pronunciation": "sow",
+        "audioUrl": "/audio/vn/sau.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-020",
+        "language": "vietnamese",
+        "targetLanguage": "Bảy",
+        "english": "Seven",
+        "pronunciation": "buy",
+        "audioUrl": "/audio/vn/bay.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-021",
+        "language": "vietnamese",
+        "targetLanguage": "Tám",
+        "english": "Eight",
+        "pronunciation": "tahm",
+        "audioUrl": "/audio/vn/tam.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-022",
+        "language": "vietnamese",
+        "targetLanguage": "Chín",
+        "english": "Nine",
+        "pronunciation": "cheen",
+        "audioUrl": "/audio/vn/chin.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-023",
+        "language": "vietnamese",
+        "targetLanguage": "Mười",
+        "english": "Ten",
+        "pronunciation": "muh-ee",
+        "audioUrl": "/audio/vn/muoi.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    }
+]

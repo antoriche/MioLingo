@@ -1,0 +1,102 @@
+[
+    {
+        "id": "fr-901",
+        "language": "french",
+        "targetLanguage": "Heureux",
+        "english": "Happy (masculine)",
+        "pronunciation": "uh-ruh",
+        "audioUrl": "/audio/fr/heureux.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-902",
+        "language": "french",
+        "targetLanguage": "Heureuse",
+        "english": "Happy (feminine)",
+        "pronunciation": "uh-ruhz",
+        "audioUrl": "/audio/fr/heureuse.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-903",
+        "language": "french",
+        "targetLanguage": "Triste",
+        "english": "Sad",
+        "pronunciation": "treest",
+        "audioUrl": "/audio/fr/triste.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-904",
+        "language": "french",
+        "targetLanguage": "En colère",
+        "english": "Angry",
+        "pronunciation": "ahn koh-lehr",
+        "audioUrl": "/audio/fr/en-colere.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-905",
+        "language": "french",
+        "targetLanguage": "Fatigué",
+        "english": "Tired",
+        "pronunciation": "fah-tee-gay",
+        "audioUrl": "/audio/fr/fatigue.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-906",
+        "language": "french",
+        "targetLanguage": "Excité",
+        "english": "Excited",
+        "pronunciation": "ek-see-tay",
+        "audioUrl": "/audio/fr/excite.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-907",
+        "language": "french",
+        "targetLanguage": "Surpris",
+        "english": "Surprised",
+        "pronunciation": "soor-pree",
+        "audioUrl": "/audio/fr/surpris.mp3",
+        "category": "emotions",
+        "difficulty": 3
+    },
+    {
+        "id": "fr-908",
+        "language": "french",
+        "targetLanguage": "Nerveux",
+        "english": "Nervous",
+        "pronunciation": "nehr-vuh",
+        "audioUrl": "/audio/fr/nerveux.mp3",
+        "category": "emotions",
+        "difficulty": 3
+    },
+    {
+        "id": "fr-909",
+        "language": "french",
+        "targetLanguage": "Calme",
+        "english": "Calm",
+        "pronunciation": "kahlm",
+        "audioUrl": "/audio/fr/calme.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-910",
+        "language": "french",
+        "targetLanguage": "Confus",
+        "english": "Confused",
+        "pronunciation": "kon-foo",
+        "audioUrl": "/audio/fr/confus.mp3",
+        "category": "emotions",
+        "difficulty": 3
+    }
+]

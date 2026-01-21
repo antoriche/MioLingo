@@ -1,0 +1,122 @@
+[
+    {
+        "id": "fr-701",
+        "language": "french",
+        "targetLanguage": "La tête",
+        "english": "Head",
+        "pronunciation": "lah teht",
+        "audioUrl": "/audio/fr/tete.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-702",
+        "language": "french",
+        "targetLanguage": "Les yeux",
+        "english": "Eyes",
+        "pronunciation": "lay zyuh",
+        "audioUrl": "/audio/fr/yeux.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-703",
+        "language": "french",
+        "targetLanguage": "Le nez",
+        "english": "Nose",
+        "pronunciation": "luh nay",
+        "audioUrl": "/audio/fr/nez.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-704",
+        "language": "french",
+        "targetLanguage": "La bouche",
+        "english": "Mouth",
+        "pronunciation": "lah boosh",
+        "audioUrl": "/audio/fr/bouche.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-705",
+        "language": "french",
+        "targetLanguage": "L'oreille",
+        "english": "Ear",
+        "pronunciation": "loh-ray",
+        "audioUrl": "/audio/fr/oreille.mp3",
+        "category": "body",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-706",
+        "language": "french",
+        "targetLanguage": "La main",
+        "english": "Hand",
+        "pronunciation": "lah man",
+        "audioUrl": "/audio/fr/main.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-707",
+        "language": "french",
+        "targetLanguage": "Le bras",
+        "english": "Arm",
+        "pronunciation": "luh brah",
+        "audioUrl": "/audio/fr/bras.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-708",
+        "language": "french",
+        "targetLanguage": "La jambe",
+        "english": "Leg",
+        "pronunciation": "lah zhahmb",
+        "audioUrl": "/audio/fr/jambe.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-709",
+        "language": "french",
+        "targetLanguage": "Le pied",
+        "english": "Foot",
+        "pronunciation": "luh pyay",
+        "audioUrl": "/audio/fr/pied.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-710",
+        "language": "french",
+        "targetLanguage": "Le doigt",
+        "english": "Finger",
+        "pronunciation": "luh dwah",
+        "audioUrl": "/audio/fr/doigt.mp3",
+        "category": "body",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-711",
+        "language": "french",
+        "targetLanguage": "Le cœur",
+        "english": "Heart",
+        "pronunciation": "luh kuhr",
+        "audioUrl": "/audio/fr/coeur.mp3",
+        "category": "body",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-712",
+        "language": "french",
+        "targetLanguage": "Les cheveux",
+        "english": "Hair",
+        "pronunciation": "lay shuh-vuh",
+        "audioUrl": "/audio/fr/cheveux.mp3",
+        "category": "body",
+        "difficulty": 2
+    }
+]

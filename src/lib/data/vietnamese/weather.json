@@ -1,0 +1,102 @@
+[
+    {
+        "id": "vi-601",
+        "language": "vietnamese",
+        "targetLanguage": "Mặt trời",
+        "english": "Sun",
+        "pronunciation": "mat troi",
+        "audioUrl": "/audio/vi/mat-troi.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-602",
+        "language": "vietnamese",
+        "targetLanguage": "Mưa",
+        "english": "Rain",
+        "pronunciation": "mua",
+        "audioUrl": "/audio/vi/mua.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-603",
+        "language": "vietnamese",
+        "targetLanguage": "Gió",
+        "english": "Wind",
+        "pronunciation": "zo",
+        "audioUrl": "/audio/vi/gio.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-604",
+        "language": "vietnamese",
+        "targetLanguage": "Tuyết",
+        "english": "Snow",
+        "pronunciation": "twee-et",
+        "audioUrl": "/audio/vi/tuyet.mp3",
+        "category": "weather",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-605",
+        "language": "vietnamese",
+        "targetLanguage": "Mây",
+        "english": "Cloud",
+        "pronunciation": "may",
+        "audioUrl": "/audio/vi/may.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-606",
+        "language": "vietnamese",
+        "targetLanguage": "Bão",
+        "english": "Storm",
+        "pronunciation": "bao",
+        "audioUrl": "/audio/vi/bao.mp3",
+        "category": "weather",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-607",
+        "language": "vietnamese",
+        "targetLanguage": "Nóng",
+        "english": "Hot",
+        "pronunciation": "nong",
+        "audioUrl": "/audio/vi/nong.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-608",
+        "language": "vietnamese",
+        "targetLanguage": "Lạnh",
+        "english": "Cold",
+        "pronunciation": "lanh",
+        "audioUrl": "/audio/vi/lanh.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-609",
+        "language": "vietnamese",
+        "targetLanguage": "Thời tiết đẹp",
+        "english": "Nice weather",
+        "pronunciation": "toi tiet dep",
+        "audioUrl": "/audio/vi/thoi-tiet-dep.mp3",
+        "category": "weather",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-610",
+        "language": "vietnamese",
+        "targetLanguage": "Trời mưa",
+        "english": "It's raining",
+        "pronunciation": "troi mua",
+        "audioUrl": "/audio/vi/troi-mua.mp3",
+        "category": "weather",
+        "difficulty": 2
+    }
+]

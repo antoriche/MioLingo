@@ -1,0 +1,52 @@
+[
+    {
+        "id": "fr-041",
+        "language": "french",
+        "targetLanguage": "Café",
+        "english": "Coffee",
+        "pronunciation": "kah-fay",
+        "audioUrl": "/audio/fr/cafe.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-042",
+        "language": "french",
+        "targetLanguage": "Pain",
+        "english": "Bread",
+        "pronunciation": "pan",
+        "audioUrl": "/audio/fr/pain.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-043",
+        "language": "french",
+        "targetLanguage": "Fromage",
+        "english": "Cheese",
+        "pronunciation": "froh-mahzh",
+        "audioUrl": "/audio/fr/fromage.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-044",
+        "language": "french",
+        "targetLanguage": "Vin",
+        "english": "Wine",
+        "pronunciation": "van",
+        "audioUrl": "/audio/fr/vin.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-045",
+        "language": "french",
+        "targetLanguage": "Croissant",
+        "english": "Croissant",
+        "pronunciation": "kwah-sahn",
+        "audioUrl": "/audio/fr/croissant.mp3",
+        "category": "food",
+        "difficulty": 1
+    }
+]

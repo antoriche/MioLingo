@@ -1,0 +1,122 @@
+[
+    {
+        "id": "vi-701",
+        "language": "vietnamese",
+        "targetLanguage": "Đầu",
+        "english": "Head",
+        "pronunciation": "dau",
+        "audioUrl": "/audio/vi/dau.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-702",
+        "language": "vietnamese",
+        "targetLanguage": "Mắt",
+        "english": "Eyes",
+        "pronunciation": "mat",
+        "audioUrl": "/audio/vi/mat.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-703",
+        "language": "vietnamese",
+        "targetLanguage": "Mũi",
+        "english": "Nose",
+        "pronunciation": "mui",
+        "audioUrl": "/audio/vi/mui.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-704",
+        "language": "vietnamese",
+        "targetLanguage": "Miệng",
+        "english": "Mouth",
+        "pronunciation": "mieng",
+        "audioUrl": "/audio/vi/mieng.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-705",
+        "language": "vietnamese",
+        "targetLanguage": "Tai",
+        "english": "Ear",
+        "pronunciation": "tai",
+        "audioUrl": "/audio/vi/tai.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-706",
+        "language": "vietnamese",
+        "targetLanguage": "Tay",
+        "english": "Hand / Arm",
+        "pronunciation": "tay",
+        "audioUrl": "/audio/vi/tay.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-707",
+        "language": "vietnamese",
+        "targetLanguage": "Cánh tay",
+        "english": "Arm",
+        "pronunciation": "kanh tay",
+        "audioUrl": "/audio/vi/canh-tay.mp3",
+        "category": "body",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-708",
+        "language": "vietnamese",
+        "targetLanguage": "Chân",
+        "english": "Leg / Foot",
+        "pronunciation": "chan",
+        "audioUrl": "/audio/vi/chan.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-709",
+        "language": "vietnamese",
+        "targetLanguage": "Bàn chân",
+        "english": "Foot",
+        "pronunciation": "ban chan",
+        "audioUrl": "/audio/vi/ban-chan.mp3",
+        "category": "body",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-710",
+        "language": "vietnamese",
+        "targetLanguage": "Ngón tay",
+        "english": "Finger",
+        "pronunciation": "ngon tay",
+        "audioUrl": "/audio/vi/ngon-tay.mp3",
+        "category": "body",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-711",
+        "language": "vietnamese",
+        "targetLanguage": "Tim",
+        "english": "Heart",
+        "pronunciation": "tim",
+        "audioUrl": "/audio/vi/tim.mp3",
+        "category": "body",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-712",
+        "language": "vietnamese",
+        "targetLanguage": "Tóc",
+        "english": "Hair",
+        "pronunciation": "tok",
+        "audioUrl": "/audio/vi/toc.mp3",
+        "category": "body",
+        "difficulty": 1
+    }
+]

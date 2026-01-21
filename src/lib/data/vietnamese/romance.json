@@ -1,0 +1,62 @@
+[
+    {
+        "id": "vn-007",
+        "language": "vietnamese",
+        "targetLanguage": "Em yêu anh",
+        "english": "I love you (girl to guy)",
+        "pronunciation": "em yew anh",
+        "audioUrl": "/audio/vn/em-yeu-anh.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-008",
+        "language": "vietnamese",
+        "targetLanguage": "Anh yêu em",
+        "english": "I love you (guy to girl)",
+        "pronunciation": "anh yew em",
+        "audioUrl": "/audio/vn/anh-yeu-em.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-009",
+        "language": "vietnamese",
+        "targetLanguage": "Em nhớ anh",
+        "english": "I miss you (girl to guy)",
+        "pronunciation": "em nyuh anh",
+        "audioUrl": "/audio/vn/em-nho-anh.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-010",
+        "language": "vietnamese",
+        "targetLanguage": "Anh nhớ em",
+        "english": "I miss you (guy to girl)",
+        "pronunciation": "anh nyuh em",
+        "audioUrl": "/audio/vn/anh-nho-em.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-011",
+        "language": "vietnamese",
+        "targetLanguage": "Em đẹp lắm",
+        "english": "You are beautiful",
+        "pronunciation": "em dep lam",
+        "audioUrl": "/audio/vn/em-dep-lam.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-012",
+        "language": "vietnamese",
+        "targetLanguage": "Người yêu",
+        "english": "Girlfriend/Boyfriend/Lover",
+        "pronunciation": "nguh-ee yew",
+        "audioUrl": "/audio/vn/nguoi-yeu.mp3",
+        "category": "romance",
+        "difficulty": 1
+    }
+]

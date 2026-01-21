@@ -1,0 +1,112 @@
+[
+    {
+        "id": "vi-501",
+        "language": "vietnamese",
+        "targetLanguage": "Màu đỏ",
+        "english": "Red",
+        "pronunciation": "mau do",
+        "audioUrl": "/audio/vi/mau-do.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-502",
+        "language": "vietnamese",
+        "targetLanguage": "Màu xanh dương",
+        "english": "Blue",
+        "pronunciation": "mau sanh zuong",
+        "audioUrl": "/audio/vi/mau-xanh-duong.mp3",
+        "category": "colors",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-503",
+        "language": "vietnamese",
+        "targetLanguage": "Màu xanh lá",
+        "english": "Green",
+        "pronunciation": "mau sanh la",
+        "audioUrl": "/audio/vi/mau-xanh-la.mp3",
+        "category": "colors",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-504",
+        "language": "vietnamese",
+        "targetLanguage": "Màu vàng",
+        "english": "Yellow",
+        "pronunciation": "mau vang",
+        "audioUrl": "/audio/vi/mau-vang.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-505",
+        "language": "vietnamese",
+        "targetLanguage": "Màu đen",
+        "english": "Black",
+        "pronunciation": "mau den",
+        "audioUrl": "/audio/vi/mau-den.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-506",
+        "language": "vietnamese",
+        "targetLanguage": "Màu trắng",
+        "english": "White",
+        "pronunciation": "mau trang",
+        "audioUrl": "/audio/vi/mau-trang.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-507",
+        "language": "vietnamese",
+        "targetLanguage": "Màu cam",
+        "english": "Orange",
+        "pronunciation": "mau cam",
+        "audioUrl": "/audio/vi/mau-cam.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-508",
+        "language": "vietnamese",
+        "targetLanguage": "Màu hồng",
+        "english": "Pink",
+        "pronunciation": "mau hong",
+        "audioUrl": "/audio/vi/mau-hong.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-509",
+        "language": "vietnamese",
+        "targetLanguage": "Màu tím",
+        "english": "Purple",
+        "pronunciation": "mau tim",
+        "audioUrl": "/audio/vi/mau-tim.mp3",
+        "category": "colors",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-510",
+        "language": "vietnamese",
+        "targetLanguage": "Màu xám",
+        "english": "Gray",
+        "pronunciation": "mau sam",
+        "audioUrl": "/audio/vi/mau-xam.mp3",
+        "category": "colors",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-511",
+        "language": "vietnamese",
+        "targetLanguage": "Màu nâu",
+        "english": "Brown",
+        "pronunciation": "mau nau",
+        "audioUrl": "/audio/vi/mau-nau.mp3",
+        "category": "colors",
+        "difficulty": 2
+    }
+]

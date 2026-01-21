@@ -1,0 +1,112 @@
+[
+    {
+        "id": "fr-501",
+        "language": "french",
+        "targetLanguage": "Rouge",
+        "english": "Red",
+        "pronunciation": "roozh",
+        "audioUrl": "/audio/fr/rouge.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-502",
+        "language": "french",
+        "targetLanguage": "Bleu",
+        "english": "Blue",
+        "pronunciation": "bluh",
+        "audioUrl": "/audio/fr/bleu.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-503",
+        "language": "french",
+        "targetLanguage": "Vert",
+        "english": "Green",
+        "pronunciation": "vehr",
+        "audioUrl": "/audio/fr/vert.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-504",
+        "language": "french",
+        "targetLanguage": "Jaune",
+        "english": "Yellow",
+        "pronunciation": "zhohn",
+        "audioUrl": "/audio/fr/jaune.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-505",
+        "language": "french",
+        "targetLanguage": "Noir",
+        "english": "Black",
+        "pronunciation": "nwahr",
+        "audioUrl": "/audio/fr/noir.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-506",
+        "language": "french",
+        "targetLanguage": "Blanc",
+        "english": "White",
+        "pronunciation": "blahn",
+        "audioUrl": "/audio/fr/blanc.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-507",
+        "language": "french",
+        "targetLanguage": "Orange",
+        "english": "Orange",
+        "pronunciation": "oh-rahnzh",
+        "audioUrl": "/audio/fr/orange.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-508",
+        "language": "french",
+        "targetLanguage": "Rose",
+        "english": "Pink",
+        "pronunciation": "rohz",
+        "audioUrl": "/audio/fr/rose.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-509",
+        "language": "french",
+        "targetLanguage": "Violet",
+        "english": "Purple",
+        "pronunciation": "vee-oh-leh",
+        "audioUrl": "/audio/fr/violet.mp3",
+        "category": "colors",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-510",
+        "language": "french",
+        "targetLanguage": "Gris",
+        "english": "Gray",
+        "pronunciation": "gree",
+        "audioUrl": "/audio/fr/gris.mp3",
+        "category": "colors",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-511",
+        "language": "french",
+        "targetLanguage": "Marron",
+        "english": "Brown",
+        "pronunciation": "mah-ron",
+        "audioUrl": "/audio/fr/marron.mp3",
+        "category": "colors",
+        "difficulty": 2
+    }
+]

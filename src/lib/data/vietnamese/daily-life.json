@@ -1,0 +1,102 @@
+[
+    {
+        "id": "vn-031",
+        "language": "vietnamese",
+        "targetLanguage": "Chào buổi sáng",
+        "english": "Good morning",
+        "pronunciation": "chow boo-oy sahng",
+        "audioUrl": "/audio/vn/chao-buoi-sang.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-032",
+        "language": "vietnamese",
+        "targetLanguage": "Chúc ngủ ngon",
+        "english": "Good night",
+        "pronunciation": "chook ngoo ngon",
+        "audioUrl": "/audio/vn/chuc-ngu-ngon.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-033",
+        "language": "vietnamese",
+        "targetLanguage": "Đi làm",
+        "english": "Go to work",
+        "pronunciation": "dee lahm",
+        "audioUrl": "/audio/vn/di-lam.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-034",
+        "language": "vietnamese",
+        "targetLanguage": "Về nhà",
+        "english": "Go home",
+        "pronunciation": "veh nyah",
+        "audioUrl": "/audio/vn/ve-nha.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-035",
+        "language": "vietnamese",
+        "targetLanguage": "Ăn cơm",
+        "english": "Eat (meal)",
+        "pronunciation": "an guhm",
+        "audioUrl": "/audio/vn/an-com.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-036",
+        "language": "vietnamese",
+        "targetLanguage": "Uống nước",
+        "english": "Drink water",
+        "pronunciation": "oo-ohng nuh-uk",
+        "audioUrl": "/audio/vn/uong-nuoc.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-037",
+        "language": "vietnamese",
+        "targetLanguage": "Ngủ",
+        "english": "Sleep",
+        "pronunciation": "ngoo",
+        "audioUrl": "/audio/vn/ngu.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-038",
+        "language": "vietnamese",
+        "targetLanguage": "Đi",
+        "english": "Go",
+        "pronunciation": "dee",
+        "audioUrl": "/audio/vn/di.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-039",
+        "language": "vietnamese",
+        "targetLanguage": "Đến",
+        "english": "Come/Arrive",
+        "pronunciation": "den",
+        "audioUrl": "/audio/vn/den.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-040",
+        "language": "vietnamese",
+        "targetLanguage": "Làm",
+        "english": "Do/Make/Work",
+        "pronunciation": "lahm",
+        "audioUrl": "/audio/vn/lam.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    }
+]

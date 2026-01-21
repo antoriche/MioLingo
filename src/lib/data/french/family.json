@@ -1,0 +1,72 @@
+[
+    {
+        "id": "fr-019",
+        "language": "french",
+        "targetLanguage": "Maman",
+        "english": "Mom",
+        "pronunciation": "mah-mahn",
+        "audioUrl": "/audio/fr/maman.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-020",
+        "language": "french",
+        "targetLanguage": "Papa",
+        "english": "Dad",
+        "pronunciation": "pah-pah",
+        "audioUrl": "/audio/fr/papa.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-021",
+        "language": "french",
+        "targetLanguage": "Frère",
+        "english": "Brother",
+        "pronunciation": "frehr",
+        "audioUrl": "/audio/fr/frere.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-022",
+        "language": "french",
+        "targetLanguage": "Sœur",
+        "english": "Sister",
+        "pronunciation": "suhr",
+        "audioUrl": "/audio/fr/soeur.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-023",
+        "language": "french",
+        "targetLanguage": "Famille",
+        "english": "Family",
+        "pronunciation": "fah-mee",
+        "audioUrl": "/audio/fr/famille.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-024",
+        "language": "french",
+        "targetLanguage": "Grand-mère",
+        "english": "Grandmother",
+        "pronunciation": "grahn-mehr",
+        "audioUrl": "/audio/fr/grand-mere.mp3",
+        "category": "family",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-025",
+        "language": "french",
+        "targetLanguage": "Grand-père",
+        "english": "Grandfather",
+        "pronunciation": "grahn-pehr",
+        "audioUrl": "/audio/fr/grand-pere.mp3",
+        "category": "family",
+        "difficulty": 2
+    }
+]

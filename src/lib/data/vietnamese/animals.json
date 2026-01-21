@@ -1,0 +1,102 @@
+[
+    {
+        "id": "vi-801",
+        "language": "vietnamese",
+        "targetLanguage": "Con mèo",
+        "english": "Cat",
+        "pronunciation": "kon meo",
+        "audioUrl": "/audio/vi/con-meo.mp3",
+        "category": "animals",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-802",
+        "language": "vietnamese",
+        "targetLanguage": "Con chó",
+        "english": "Dog",
+        "pronunciation": "kon cho",
+        "audioUrl": "/audio/vi/con-cho.mp3",
+        "category": "animals",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-803",
+        "language": "vietnamese",
+        "targetLanguage": "Con chim",
+        "english": "Bird",
+        "pronunciation": "kon chim",
+        "audioUrl": "/audio/vi/con-chim.mp3",
+        "category": "animals",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-804",
+        "language": "vietnamese",
+        "targetLanguage": "Con cá",
+        "english": "Fish",
+        "pronunciation": "kon ka",
+        "audioUrl": "/audio/vi/con-ca.mp3",
+        "category": "animals",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-805",
+        "language": "vietnamese",
+        "targetLanguage": "Con ngựa",
+        "english": "Horse",
+        "pronunciation": "kon ngua",
+        "audioUrl": "/audio/vi/con-ngua.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-806",
+        "language": "vietnamese",
+        "targetLanguage": "Con bò",
+        "english": "Cow",
+        "pronunciation": "kon bo",
+        "audioUrl": "/audio/vi/con-bo.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-807",
+        "language": "vietnamese",
+        "targetLanguage": "Con thỏ",
+        "english": "Rabbit",
+        "pronunciation": "kon to",
+        "audioUrl": "/audio/vi/con-tho.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-808",
+        "language": "vietnamese",
+        "targetLanguage": "Con sư tử",
+        "english": "Lion",
+        "pronunciation": "kon su tu",
+        "audioUrl": "/audio/vi/con-su-tu.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-809",
+        "language": "vietnamese",
+        "targetLanguage": "Con voi",
+        "english": "Elephant",
+        "pronunciation": "kon voi",
+        "audioUrl": "/audio/vi/con-voi.mp3",
+        "category": "animals",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-810",
+        "language": "vietnamese",
+        "targetLanguage": "Con bướm",
+        "english": "Butterfly",
+        "pronunciation": "kon buom",
+        "audioUrl": "/audio/vi/con-buom.mp3",
+        "category": "animals",
+        "difficulty": 2
+    }
+]

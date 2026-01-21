@@ -1,0 +1,102 @@
+[
+    {
+        "id": "vi-901",
+        "language": "vietnamese",
+        "targetLanguage": "Vui",
+        "english": "Happy",
+        "pronunciation": "vui",
+        "audioUrl": "/audio/vi/vui.mp3",
+        "category": "emotions",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-902",
+        "language": "vietnamese",
+        "targetLanguage": "Hạnh phúc",
+        "english": "Happy / Joyful",
+        "pronunciation": "hanh phuk",
+        "audioUrl": "/audio/vi/hanh-phuc.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-903",
+        "language": "vietnamese",
+        "targetLanguage": "Buồn",
+        "english": "Sad",
+        "pronunciation": "buon",
+        "audioUrl": "/audio/vi/buon.mp3",
+        "category": "emotions",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-904",
+        "language": "vietnamese",
+        "targetLanguage": "Giận",
+        "english": "Angry",
+        "pronunciation": "zan",
+        "audioUrl": "/audio/vi/gian.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-905",
+        "language": "vietnamese",
+        "targetLanguage": "Mệt",
+        "english": "Tired",
+        "pronunciation": "met",
+        "audioUrl": "/audio/vi/met.mp3",
+        "category": "emotions",
+        "difficulty": 1
+    },
+    {
+        "id": "vi-906",
+        "language": "vietnamese",
+        "targetLanguage": "Phấn khích",
+        "english": "Excited",
+        "pronunciation": "fan khik",
+        "audioUrl": "/audio/vi/phan-khich.mp3",
+        "category": "emotions",
+        "difficulty": 3
+    },
+    {
+        "id": "vi-907",
+        "language": "vietnamese",
+        "targetLanguage": "Ngạc nhiên",
+        "english": "Surprised",
+        "pronunciation": "ngak nyen",
+        "audioUrl": "/audio/vi/ngac-nhien.mp3",
+        "category": "emotions",
+        "difficulty": 3
+    },
+    {
+        "id": "vi-908",
+        "language": "vietnamese",
+        "targetLanguage": "Lo lắng",
+        "english": "Nervous / Worried",
+        "pronunciation": "lo lang",
+        "audioUrl": "/audio/vi/lo-lang.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-909",
+        "language": "vietnamese",
+        "targetLanguage": "Bình tĩnh",
+        "english": "Calm",
+        "pronunciation": "binh tinh",
+        "audioUrl": "/audio/vi/binh-tinh.mp3",
+        "category": "emotions",
+        "difficulty": 2
+    },
+    {
+        "id": "vi-910",
+        "language": "vietnamese",
+        "targetLanguage": "Bối rối",
+        "english": "Confused",
+        "pronunciation": "boi roi",
+        "audioUrl": "/audio/vi/boi-roi.mp3",
+        "category": "emotions",
+        "difficulty": 3
+    }
+]

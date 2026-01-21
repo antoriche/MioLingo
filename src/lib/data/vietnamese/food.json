@@ -1,0 +1,102 @@
+[
+    {
+        "id": "vn-041",
+        "language": "vietnamese",
+        "targetLanguage": "Cơm",
+        "english": "Rice/Meal",
+        "pronunciation": "guhm",
+        "audioUrl": "/audio/vn/com.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-042",
+        "language": "vietnamese",
+        "targetLanguage": "Phở",
+        "english": "Pho (Vietnamese soup)",
+        "pronunciation": "fuh",
+        "audioUrl": "/audio/vn/pho.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-043",
+        "language": "vietnamese",
+        "targetLanguage": "Bánh mì",
+        "english": "Bread/Sandwich",
+        "pronunciation": "banh mee",
+        "audioUrl": "/audio/vn/banh-mi.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-044",
+        "language": "vietnamese",
+        "targetLanguage": "Nước",
+        "english": "Water",
+        "pronunciation": "nuh-uk",
+        "audioUrl": "/audio/vn/nuoc.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-045",
+        "language": "vietnamese",
+        "targetLanguage": "Cà phê",
+        "english": "Coffee",
+        "pronunciation": "gah feh",
+        "audioUrl": "/audio/vn/ca-phe.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-046",
+        "language": "vietnamese",
+        "targetLanguage": "Trà",
+        "english": "Tea",
+        "pronunciation": "chah",
+        "audioUrl": "/audio/vn/tra.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-047",
+        "language": "vietnamese",
+        "targetLanguage": "Bia",
+        "english": "Beer",
+        "pronunciation": "bee-ah",
+        "audioUrl": "/audio/vn/bia.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-048",
+        "language": "vietnamese",
+        "targetLanguage": "Ngon",
+        "english": "Delicious",
+        "pronunciation": "ngon",
+        "audioUrl": "/audio/vn/ngon.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-049",
+        "language": "vietnamese",
+        "targetLanguage": "Đói",
+        "english": "Hungry",
+        "pronunciation": "doy",
+        "audioUrl": "/audio/vn/doi.mp3",
+        "category": "food",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-050",
+        "language": "vietnamese",
+        "targetLanguage": "No",
+        "english": "Full (not hungry)",
+        "pronunciation": "naw",
+        "audioUrl": "/audio/vn/no.mp3",
+        "category": "food",
+        "difficulty": 1
+    }
+]

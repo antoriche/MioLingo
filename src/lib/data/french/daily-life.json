@@ -1,0 +1,52 @@
+[
+    {
+        "id": "fr-036",
+        "language": "french",
+        "targetLanguage": "Bonjour",
+        "english": "Good morning",
+        "pronunciation": "bon-zhoor",
+        "audioUrl": "/audio/fr/bonjour.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-037",
+        "language": "french",
+        "targetLanguage": "Bonne nuit",
+        "english": "Good night",
+        "pronunciation": "bon nwee",
+        "audioUrl": "/audio/fr/bonne-nuit.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-038",
+        "language": "french",
+        "targetLanguage": "Comment ça va?",
+        "english": "How are you?",
+        "pronunciation": "koh-mahn sah vah",
+        "audioUrl": "/audio/fr/comment-ca-va.mp3",
+        "category": "daily-life",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-039",
+        "language": "french",
+        "targetLanguage": "Ça va bien",
+        "english": "I'm fine / It's going well",
+        "pronunciation": "sah vah bee-an",
+        "audioUrl": "/audio/fr/ca-va-bien.mp3",
+        "category": "daily-life",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-040",
+        "language": "french",
+        "targetLanguage": "Eau",
+        "english": "Water",
+        "pronunciation": "oh",
+        "audioUrl": "/audio/fr/eau.mp3",
+        "category": "daily-life",
+        "difficulty": 1
+    }
+]

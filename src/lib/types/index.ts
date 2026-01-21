@@ -21,7 +21,12 @@ export type VocabularyCategory =
   | 'daily-life'
   | 'food'
   | 'numbers'
-  | 'time';
+  | 'time'
+  | 'colors'
+  | 'weather'
+  | 'body'
+  | 'animals'
+  | 'emotions';
 
 export interface UserProgress {
   id: string; // User ID (for now, single user = 'default')

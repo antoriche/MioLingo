@@ -1,0 +1,102 @@
+[
+    {
+        "id": "fr-001",
+        "language": "french",
+        "targetLanguage": "Bonjour",
+        "english": "Hello / Good morning",
+        "pronunciation": "bon-zhoor",
+        "audioUrl": "/audio/fr/bonjour.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-002",
+        "language": "french",
+        "targetLanguage": "Merci",
+        "english": "Thank you",
+        "pronunciation": "mehr-see",
+        "audioUrl": "/audio/fr/merci.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-003",
+        "language": "french",
+        "targetLanguage": "Pardon",
+        "english": "Sorry / Excuse me",
+        "pronunciation": "par-don",
+        "audioUrl": "/audio/fr/pardon.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-004",
+        "language": "french",
+        "targetLanguage": "Au revoir",
+        "english": "Goodbye",
+        "pronunciation": "oh ruh-vwahr",
+        "audioUrl": "/audio/fr/au-revoir.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-005",
+        "language": "french",
+        "targetLanguage": "Oui",
+        "english": "Yes",
+        "pronunciation": "wee",
+        "audioUrl": "/audio/fr/oui.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-006",
+        "language": "french",
+        "targetLanguage": "Non",
+        "english": "No",
+        "pronunciation": "nohn",
+        "audioUrl": "/audio/fr/non.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-007",
+        "language": "french",
+        "targetLanguage": "Bonsoir",
+        "english": "Good evening",
+        "pronunciation": "bon-swahr",
+        "audioUrl": "/audio/fr/bonsoir.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-008",
+        "language": "french",
+        "targetLanguage": "Salut",
+        "english": "Hi / Bye (informal)",
+        "pronunciation": "sa-loo",
+        "audioUrl": "/audio/fr/salut.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-009",
+        "language": "french",
+        "targetLanguage": "S'il vous plaît",
+        "english": "Please (formal)",
+        "pronunciation": "see voo play",
+        "audioUrl": "/audio/fr/sil-vous-plait.mp3",
+        "category": "greetings",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-010",
+        "language": "french",
+        "targetLanguage": "S'il te plaît",
+        "english": "Please (informal)",
+        "pronunciation": "see tuh play",
+        "audioUrl": "/audio/fr/sil-te-plait.mp3",
+        "category": "greetings",
+        "difficulty": 2
+    }
+]

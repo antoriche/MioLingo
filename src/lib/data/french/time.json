@@ -1,0 +1,52 @@
+[
+    {
+        "id": "fr-046",
+        "language": "french",
+        "targetLanguage": "Aujourd'hui",
+        "english": "Today",
+        "pronunciation": "oh-zhoor-dwee",
+        "audioUrl": "/audio/fr/aujourdhui.mp3",
+        "category": "time",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-047",
+        "language": "french",
+        "targetLanguage": "Demain",
+        "english": "Tomorrow",
+        "pronunciation": "duh-man",
+        "audioUrl": "/audio/fr/demain.mp3",
+        "category": "time",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-048",
+        "language": "french",
+        "targetLanguage": "Hier",
+        "english": "Yesterday",
+        "pronunciation": "yehr",
+        "audioUrl": "/audio/fr/hier.mp3",
+        "category": "time",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-049",
+        "language": "french",
+        "targetLanguage": "Maintenant",
+        "english": "Now",
+        "pronunciation": "man-tuh-nahn",
+        "audioUrl": "/audio/fr/maintenant.mp3",
+        "category": "time",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-050",
+        "language": "french",
+        "targetLanguage": "Bientôt",
+        "english": "Soon",
+        "pronunciation": "bee-an-toh",
+        "audioUrl": "/audio/fr/bientot.mp3",
+        "category": "time",
+        "difficulty": 2
+    }
+]

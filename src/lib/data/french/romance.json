@@ -1,0 +1,82 @@
+[
+    {
+        "id": "fr-011",
+        "language": "french",
+        "targetLanguage": "Je t'aime",
+        "english": "I love you",
+        "pronunciation": "zhuh tem",
+        "audioUrl": "/audio/fr/je-taime.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-012",
+        "language": "french",
+        "targetLanguage": "Mon amour",
+        "english": "My love",
+        "pronunciation": "mohn ah-moor",
+        "audioUrl": "/audio/fr/mon-amour.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-013",
+        "language": "french",
+        "targetLanguage": "Ma chérie",
+        "english": "My darling (feminine)",
+        "pronunciation": "mah sheh-ree",
+        "audioUrl": "/audio/fr/ma-cherie.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-014",
+        "language": "french",
+        "targetLanguage": "Mon chéri",
+        "english": "My darling (masculine)",
+        "pronunciation": "mohn sheh-ree",
+        "audioUrl": "/audio/fr/mon-cheri.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-015",
+        "language": "french",
+        "targetLanguage": "Tu me manques",
+        "english": "I miss you",
+        "pronunciation": "too muh mahnk",
+        "audioUrl": "/audio/fr/tu-me-manques.mp3",
+        "category": "romance",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-016",
+        "language": "french",
+        "targetLanguage": "Bisou",
+        "english": "Kiss",
+        "pronunciation": "bee-zoo",
+        "audioUrl": "/audio/fr/bisou.mp3",
+        "category": "romance",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-017",
+        "language": "french",
+        "targetLanguage": "Tu es belle",
+        "english": "You are beautiful (feminine)",
+        "pronunciation": "too ay bell",
+        "audioUrl": "/audio/fr/tu-es-belle.mp3",
+        "category": "romance",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-018",
+        "language": "french",
+        "targetLanguage": "Tu es beau",
+        "english": "You are handsome (masculine)",
+        "pronunciation": "too ay boh",
+        "audioUrl": "/audio/fr/tu-es-beau.mp3",
+        "category": "romance",
+        "difficulty": 2
+    }
+]

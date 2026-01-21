@@ -1,7 +1,6 @@
 // Database initialization and seeding utilities
 import { getVocabularyDB, getProgressDB } from '../db';
-import { vietnameseVocabulary } from '../data/vocabulary';
-import { frenchVocabulary } from '../data/vocabulary-french';
+import { vietnameseVocabulary, frenchVocabulary } from '../data/vocabulary-loader';
 import type { VocabularyWord, UserProgress, WordProgress, Language } from '../types';
 
 /**

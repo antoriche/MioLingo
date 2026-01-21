@@ -1,0 +1,62 @@
+[
+    {
+        "id": "vn-001",
+        "language": "vietnamese",
+        "targetLanguage": "Xin chào",
+        "english": "Hello",
+        "pronunciation": "sin chow",
+        "audioUrl": "/audio/vn/xin-chao.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-002",
+        "language": "vietnamese",
+        "targetLanguage": "Cảm ơn",
+        "english": "Thank you",
+        "pronunciation": "gahm uhn",
+        "audioUrl": "/audio/vn/cam-on.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-003",
+        "language": "vietnamese",
+        "targetLanguage": "Xin lỗi",
+        "english": "Sorry/Excuse me",
+        "pronunciation": "sin loy",
+        "audioUrl": "/audio/vn/xin-loi.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-004",
+        "language": "vietnamese",
+        "targetLanguage": "Tạm biệt",
+        "english": "Goodbye",
+        "pronunciation": "tam byet",
+        "audioUrl": "/audio/vn/tam-biet.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-005",
+        "language": "vietnamese",
+        "targetLanguage": "Vâng",
+        "english": "Yes",
+        "pronunciation": "vuhng",
+        "audioUrl": "/audio/vn/vang.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-006",
+        "language": "vietnamese",
+        "targetLanguage": "Không",
+        "english": "No",
+        "pronunciation": "khohm",
+        "audioUrl": "/audio/vn/khong.mp3",
+        "category": "greetings",
+        "difficulty": 1
+    }
+]

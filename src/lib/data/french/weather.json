@@ -1,0 +1,102 @@
+[
+    {
+        "id": "fr-601",
+        "language": "french",
+        "targetLanguage": "Le soleil",
+        "english": "Sun / Sunny",
+        "pronunciation": "luh soh-lay",
+        "audioUrl": "/audio/fr/soleil.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-602",
+        "language": "french",
+        "targetLanguage": "La pluie",
+        "english": "Rain",
+        "pronunciation": "lah plwee",
+        "audioUrl": "/audio/fr/pluie.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-603",
+        "language": "french",
+        "targetLanguage": "Le vent",
+        "english": "Wind",
+        "pronunciation": "luh vahn",
+        "audioUrl": "/audio/fr/vent.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-604",
+        "language": "french",
+        "targetLanguage": "La neige",
+        "english": "Snow",
+        "pronunciation": "lah nehzh",
+        "audioUrl": "/audio/fr/neige.mp3",
+        "category": "weather",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-605",
+        "language": "french",
+        "targetLanguage": "Le nuage",
+        "english": "Cloud",
+        "pronunciation": "luh noo-ahzh",
+        "audioUrl": "/audio/fr/nuage.mp3",
+        "category": "weather",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-606",
+        "language": "french",
+        "targetLanguage": "L'orage",
+        "english": "Storm",
+        "pronunciation": "loh-rahzh",
+        "audioUrl": "/audio/fr/orage.mp3",
+        "category": "weather",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-607",
+        "language": "french",
+        "targetLanguage": "Chaud",
+        "english": "Hot",
+        "pronunciation": "shoh",
+        "audioUrl": "/audio/fr/chaud.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-608",
+        "language": "french",
+        "targetLanguage": "Froid",
+        "english": "Cold",
+        "pronunciation": "frwah",
+        "audioUrl": "/audio/fr/froid.mp3",
+        "category": "weather",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-609",
+        "language": "french",
+        "targetLanguage": "Il fait beau",
+        "english": "Nice weather",
+        "pronunciation": "eel feh boh",
+        "audioUrl": "/audio/fr/il-fait-beau.mp3",
+        "category": "weather",
+        "difficulty": 2
+    },
+    {
+        "id": "fr-610",
+        "language": "french",
+        "targetLanguage": "Il pleut",
+        "english": "It's raining",
+        "pronunciation": "eel pluh",
+        "audioUrl": "/audio/fr/il-pleut.mp3",
+        "category": "weather",
+        "difficulty": 2
+    }
+]

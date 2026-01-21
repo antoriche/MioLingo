@@ -1,0 +1,102 @@
+[
+    {
+        "id": "fr-026",
+        "language": "french",
+        "targetLanguage": "Un",
+        "english": "One",
+        "pronunciation": "uhn",
+        "audioUrl": "/audio/fr/un.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-027",
+        "language": "french",
+        "targetLanguage": "Deux",
+        "english": "Two",
+        "pronunciation": "duh",
+        "audioUrl": "/audio/fr/deux.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-028",
+        "language": "french",
+        "targetLanguage": "Trois",
+        "english": "Three",
+        "pronunciation": "twah",
+        "audioUrl": "/audio/fr/trois.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-029",
+        "language": "french",
+        "targetLanguage": "Quatre",
+        "english": "Four",
+        "pronunciation": "katr",
+        "audioUrl": "/audio/fr/quatre.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-030",
+        "language": "french",
+        "targetLanguage": "Cinq",
+        "english": "Five",
+        "pronunciation": "sank",
+        "audioUrl": "/audio/fr/cinq.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-031",
+        "language": "french",
+        "targetLanguage": "Six",
+        "english": "Six",
+        "pronunciation": "sees",
+        "audioUrl": "/audio/fr/six.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-032",
+        "language": "french",
+        "targetLanguage": "Sept",
+        "english": "Seven",
+        "pronunciation": "set",
+        "audioUrl": "/audio/fr/sept.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-033",
+        "language": "french",
+        "targetLanguage": "Huit",
+        "english": "Eight",
+        "pronunciation": "weet",
+        "audioUrl": "/audio/fr/huit.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-034",
+        "language": "french",
+        "targetLanguage": "Neuf",
+        "english": "Nine",
+        "pronunciation": "nuhf",
+        "audioUrl": "/audio/fr/neuf.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    },
+    {
+        "id": "fr-035",
+        "language": "french",
+        "targetLanguage": "Dix",
+        "english": "Ten",
+        "pronunciation": "dees",
+        "audioUrl": "/audio/fr/dix.mp3",
+        "category": "numbers",
+        "difficulty": 1
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "vn-024",
+        "language": "vietnamese",
+        "targetLanguage": "Gia đình",
+        "english": "Family",
+        "pronunciation": "zah dihn",
+        "audioUrl": "/audio/vn/gia-dinh.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-025",
+        "language": "vietnamese",
+        "targetLanguage": "Bố",
+        "english": "Father/Dad",
+        "pronunciation": "boh",
+        "audioUrl": "/audio/vn/bo.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-026",
+        "language": "vietnamese",
+        "targetLanguage": "Mẹ",
+        "english": "Mother/Mom",
+        "pronunciation": "meh",
+        "audioUrl": "/audio/vn/me.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-027",
+        "language": "vietnamese",
+        "targetLanguage": "Anh trai",
+        "english": "Older brother",
+        "pronunciation": "anh chai",
+        "audioUrl": "/audio/vn/anh-trai.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-028",
+        "language": "vietnamese",
+        "targetLanguage": "Chị gái",
+        "english": "Older sister",
+        "pronunciation": "chee guy",
+        "audioUrl": "/audio/vn/chi-gai.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-029",
+        "language": "vietnamese",
+        "targetLanguage": "Em trai",
+        "english": "Younger brother",
+        "pronunciation": "em chai",
+        "audioUrl": "/audio/vn/em-trai.mp3",
+        "category": "family",
+        "difficulty": 1
+    },
+    {
+        "id": "vn-030",
+        "language": "vietnamese",
+        "targetLanguage": "Em gái",
+        "english": "Younger sister",
+        "pronunciation": "em guy",
+        "audioUrl": "/audio/vn/em-gai.mp3",
+        "category": "family",
+        "difficulty": 1
+    }
+]

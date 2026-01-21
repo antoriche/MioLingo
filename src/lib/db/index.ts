@@ -17,7 +17,7 @@ export function initializeDatabases() {
   // Dynamically import PouchDB only on client
   if (!vocabularyDB) {
     try {
-      const PouchDB = require('pouchdb-browser');
+      const PouchDB = require('pouchdb-browser').default || require('pouchdb-browser');
 
       // Vocabulary database (read-only for users, pre-populated)
       vocabularyDB = new PouchDB('miolingo-vocabulary');

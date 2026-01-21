@@ -76,8 +76,19 @@ export default function Home() {
     setLoading(true);
 
     try {
+      // Ensure databases are initialized
+      initializeDatabases();
+
       // Get all vocabulary
       const allWords = await getAllVocabulary();
+
+      if (allWords.length === 0) {
+        console.error('No vocabulary words found');
+        alert('No vocabulary words available. Please refresh the page.');
+        setLoading(false);
+        return;
+      }
+
       const allWordProgress = await getAllWordProgress();
 
       // Get learned word IDs
@@ -98,12 +109,20 @@ export default function Home() {
       const sessionWordIds = [...reviewWordIds, ...newWordIds];
       const sessionWords = allWords.filter(w => sessionWordIds.includes(w.id));
 
+      if (sessionWords.length === 0) {
+        console.error('No words available for study session');
+        alert('No words available for study. Please try again.');
+        setLoading(false);
+        return;
+      }
+
       setStudyWords(sessionWords);
       setCurrentIndex(0);
       setSessionStartTime(Date.now());
       setMode('learning');
     } catch (error) {
       console.error('Error starting learning session:', error);
+      alert(`Failed to start learning session: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
       setLoading(false);
     }
@@ -391,6 +410,7 @@ export default function Home() {
 
         <button
           onClick={startLearning}
+          disabled={loading}
           style={{
             marginTop: '2rem',
             padding: '1.5rem',
@@ -398,14 +418,16 @@ export default function Home() {
             fontWeight: '600',
             border: 'none',
             borderRadius: '12px',
-            backgroundColor: '#FF6B6B',
+            backgroundColor: loading ? '#CCC' : '#FF6B6B',
             color: 'white',
-            cursor: 'pointer',
+            cursor: loading ? 'not-allowed' : 'pointer',
             width: '100%',
-            boxShadow: '0 4px 12px rgba(255, 107, 107, 0.3)',
+            boxShadow: loading ? 'none' : '0 4px 12px rgba(255, 107, 107, 0.3)',
+            opacity: loading ? 0.7 : 1,
+            transition: 'all 0.2s ease',
           }}
         >
-          🚀 Start Learning Today
+          {loading ? '⏳ Loading...' : '🚀 Start Learning Today'}
         </button>
 
         <p style={{

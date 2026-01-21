@@ -11,7 +11,7 @@ import {
   saveWordProgress,
   saveStudySession,
 } from '@/lib/db/helpers';
-import { calculateNextReview, getWordsForReview, getNewWords } from '@/lib/learning/spaced-repetition';
+import { calculateNextReview, getWordsForReview, getNewWords, buildLearningSession } from '@/lib/learning/spaced-repetition';
 import { getDateString } from '@/lib/learning/streak';
 import { loadLanguagePreference, saveLanguagePreference } from '@/lib/learning/language-storage';
 import Flashcard from '@/components/flashcard/Flashcard';
@@ -122,23 +122,20 @@ export default function Home() {
 
       const allWordProgress = await getWordProgressByLanguage(currentLanguage);
 
-      // Get learned word IDs
-      const learnedWordIds = new Set(allWordProgress.map(wp => wp.wordId));
-
-      // Get words for review (up to 20)
-      const reviewWordIds = getWordsForReview(allWordProgress, 20);
-
-      // Calculate how many new words needed (target: 10 total for session)
-      const newWordsNeeded = Math.max(0, 10 - reviewWordIds.length);
-      const newWordIds = getNewWords(
+      // Build a mixed learning session with priority weighting for failed words
+      const sessionWordIds = buildLearningSession(
+        allWordProgress,
         allWords.map(w => w.id),
-        learnedWordIds,
-        newWordsNeeded
+        10, // target new words
+        20  // target review words
       );
 
-      // Combine review and new words
-      const sessionWordIds = [...reviewWordIds, ...newWordIds];
       const sessionWords = allWords.filter(w => sessionWordIds.includes(w.id));
+
+      // Preserve the order from buildLearningSession (prioritized)
+      sessionWords.sort((a, b) => {
+        return sessionWordIds.indexOf(a.id) - sessionWordIds.indexOf(b.id);
+      });
 
       if (sessionWords.length === 0) {
         console.error('No words available for study session');

@@ -70,7 +70,9 @@ export async function getAllVocabulary(): Promise<VocabularyWord[]> {
 
     try {
         const result = await db.allDocs({ include_docs: true });
-        return result.rows.map(row => row.doc as VocabularyWord);
+        return result.rows
+            .filter((row: any) => row.doc)
+            .map((row: any) => row.doc as VocabularyWord);
     } catch (error) {
         console.error('Error fetching vocabulary:', error);
         return [];
@@ -148,8 +150,8 @@ export async function getAllWordProgress(): Promise<WordProgress[]> {
         });
 
         return result.rows
-            .filter(row => row.doc)
-            .map(row => row.doc as any as WordProgress);
+            .filter((row: any) => row.doc)
+            .map((row: any) => row.doc as any as WordProgress);
     } catch (error) {
         console.error('Error fetching all word progress:', error);
         return [];
@@ -233,7 +235,9 @@ export async function getAllStudySessions() {
             endkey: 'session-\uffff',
         });
 
-        return result.rows.map(row => row.doc);
+        return result.rows
+            .filter((row: any) => row.doc)
+            .map((row: any) => row.doc);
     } catch (error) {
         console.error('Error fetching study sessions:', error);
         return [];

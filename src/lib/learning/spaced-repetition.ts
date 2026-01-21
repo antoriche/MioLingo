@@ -1,5 +1,6 @@
 // Spaced Repetition Algorithm (SM-2) for MioLingo
-import type { WordProgress, ReviewQuality } from '../types';
+import type { WordProgress } from '../types';
+import { ReviewQuality } from '../types';
 
 /**
  * Calculate next review date using SM-2 algorithm
@@ -47,7 +48,7 @@ export function calculateNextReview(
  */
 export function getWordsForReview(allProgress: WordProgress[], count: number = 20): string[] {
   const now = new Date();
-  
+
   const dueWords = allProgress
     .filter(p => {
       if (!p.nextReview) return false;
